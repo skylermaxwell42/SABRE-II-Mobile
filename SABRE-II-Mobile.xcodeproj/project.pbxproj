@@ -14,6 +14,7 @@
 		693657D52221BE3000DF9561 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 693657D32221BE3000DF9561 /* LaunchScreen.storyboard */; };
 		693657E02221BE3000DF9561 /* SABRE_II_MobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693657DF2221BE3000DF9561 /* SABRE_II_MobileTests.swift */; };
 		693657EB2221BE3000DF9561 /* SABRE_II_MobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693657EA2221BE3000DF9561 /* SABRE_II_MobileUITests.swift */; };
+		693657FB22220CAC00DF9561 /* JukeBoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693657FA22220CAC00DF9561 /* JukeBoxViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		693657E62221BE3000DF9561 /* SABRE-II-MobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SABRE-II-MobileUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		693657EA2221BE3000DF9561 /* SABRE_II_MobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SABRE_II_MobileUITests.swift; sourceTree = "<group>"; };
 		693657EC2221BE3000DF9561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		693657FA22220CAC00DF9561 /* JukeBoxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JukeBoxViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				693657D12221BE3000DF9561 /* Assets.xcassets */,
 				693657D32221BE3000DF9561 /* LaunchScreen.storyboard */,
 				693657D62221BE3000DF9561 /* Info.plist */,
+				693657FA22220CAC00DF9561 /* JukeBoxViewController.swift */,
 			);
 			path = "SABRE-II-Mobile";
 			sourceTree = "<group>";
@@ -193,6 +196,11 @@
 				TargetAttributes = {
 					693657C62221BE2E00DF9561 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					693657DA2221BE3000DF9561 = {
 						CreatedOnToolsVersion = 10.1;
@@ -257,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				693657CD2221BE2E00DF9561 /* ViewController.swift in Sources */,
+				693657FB22220CAC00DF9561 /* JukeBoxViewController.swift in Sources */,
 				693657CB2221BE2E00DF9561 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

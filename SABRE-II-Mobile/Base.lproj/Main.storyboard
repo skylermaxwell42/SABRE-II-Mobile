@@ -60,12 +60,40 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="jukeboxName" destination="1dL-t6-yiK" id="Mci-ed-5qG"/>
+                        <outlet property="jukeBoxCreateButton" destination="hfB-qz-iGC" id="9Fo-of-Dyn"/>
+                        <outlet property="jukeBoxCreateTextField" destination="1dL-t6-yiK" id="U1X-0t-Avh"/>
+                        <outlet property="jukeBoxCreateView" destination="Nx2-vg-Kwv" id="9pP-rB-uia"/>
+                        <outlet property="jukeBoxUILabel" destination="g6E-dE-GxV" id="hQ5-ld-TP2"/>
+                        <segue destination="ETW-Pc-ero" kind="show" identifier="createRoomSegueue" id="OqL-0v-kh4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-78.260869565217391" y="143.97321428571428"/>
+        </scene>
+        <!--Juke Box View Controller-->
+        <scene sceneID="NTt-mn-hfs">
+            <objects>
+                <viewController id="ETW-Pc-ero" customClass="JukeBoxViewController" customModule="SABRE_II_Mobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X76-PB-6h9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RsH-Cq-rqn">
+                                <rect key="frame" x="87" y="196" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ln5-ae-7lA"/>
+                    </view>
+                    <connections>
+                        <outlet property="currentSongAlbumArt" destination="RsH-Cq-rqn" id="AHp-xf-phW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="red-AK-wgV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="936" y="50"/>
         </scene>
     </scenes>
 </document>
