@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SABRE_II_Mobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Nx2-vg-Kwv">
+                                <rect key="frame" x="20" y="94" width="414" height="106"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SABRE-II" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6E-dE-GxV">
+                                        <rect key="frame" x="0.0" y="0.0" width="99.5" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter name for juke box" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1dL-t6-yiK">
+                                        <rect key="frame" x="0.0" y="38" width="394" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfB-qz-iGC">
+                                        <rect key="frame" x="0.0" y="76" width="46" height="30"/>
+                                        <state key="normal" title="Create"/>
+                                        <connections>
+                                            <action selector="jukeBoxCreateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="etF-Ho-3ez"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="1dL-t6-yiK" firstAttribute="leading" secondItem="Nx2-vg-Kwv" secondAttribute="leading" constant="5" id="2fZ-HY-I88"/>
+                                    <constraint firstItem="hfB-qz-iGC" firstAttribute="leading" secondItem="Nx2-vg-Kwv" secondAttribute="leading" constant="5" id="L3c-4m-PTt"/>
+                                    <constraint firstItem="g6E-dE-GxV" firstAttribute="leading" secondItem="Nx2-vg-Kwv" secondAttribute="leading" constant="5" id="Lbw-qD-41v"/>
+                                    <constraint firstAttribute="trailing" secondItem="1dL-t6-yiK" secondAttribute="trailing" constant="20" id="wkt-ob-1Lj"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Nx2-vg-Kwv" firstAttribute="leading" secondItem="LoV-nS-O8A" secondAttribute="leading" id="P6Z-dI-983"/>
+                            <constraint firstItem="Nx2-vg-Kwv" firstAttribute="trailing" secondItem="LoV-nS-O8A" secondAttribute="trailing" constant="20" id="QPA-7g-DJT"/>
+                            <constraint firstItem="Nx2-vg-Kwv" firstAttribute="leading" secondItem="LoV-nS-O8A" secondAttribute="leading" constant="20" id="Um1-6A-imZ"/>
+                            <constraint firstItem="Nx2-vg-Kwv" firstAttribute="top" secondItem="LoV-nS-O8A" secondAttribute="top" constant="50" id="a0k-dM-4Wt"/>
+                            <constraint firstItem="LoV-nS-O8A" firstAttribute="trailing" secondItem="Nx2-vg-Kwv" secondAttribute="trailing" id="eZz-R2-awm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LoV-nS-O8A"/>
+                    </view>
+                    <connections>
+                        <outlet property="jukeBoxCreateButton" destination="hfB-qz-iGC" id="9Fo-of-Dyn"/>
+                        <outlet property="jukeBoxCreateTextField" destination="1dL-t6-yiK" id="U1X-0t-Avh"/>
+                        <outlet property="jukeBoxCreateView" destination="Nx2-vg-Kwv" id="9pP-rB-uia"/>
+                        <outlet property="jukeBoxUILabel" destination="g6E-dE-GxV" id="hQ5-ld-TP2"/>
+                        <segue destination="ETW-Pc-ero" kind="show" identifier="createRoomSegueue" id="OqL-0v-kh4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-78.260869565217391" y="143.97321428571428"/>
+        </scene>
+        <!--Juke Box View Controller-->
+        <scene sceneID="NTt-mn-hfs">
+            <objects>
+                <viewController id="ETW-Pc-ero" customClass="JukeBoxViewController" customModule="SABRE_II_Mobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X76-PB-6h9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RsH-Cq-rqn">
+                                <rect key="frame" x="87" y="166" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="C4M-RO-TUs"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FIR-bc-6e8">
+                                <rect key="frame" x="309" y="761" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="4xU-ag-YKg"/>
+                                    <constraint firstAttribute="width" secondItem="FIR-bc-6e8" secondAttribute="height" multiplier="1:1" id="DDB-Ma-8iB"/>
+                                    <constraint firstAttribute="width" secondItem="FIR-bc-6e8" secondAttribute="height" multiplier="1:1" id="Evh-HO-iL0"/>
+                                    <constraint firstAttribute="height" constant="75" id="Tko-bG-iB0"/>
+                                </constraints>
+                                <state key="normal" image="icons8-add-filled-100"/>
+                                <connections>
+                                    <action selector="addSongToJukeBox:" destination="ETW-Pc-ero" eventType="touchUpInside" id="TvQ-o9-gTB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qj0-LT-F36">
+                                <rect key="frame" x="30" y="761" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Qj0-LT-F36" secondAttribute="height" multiplier="1:1" id="i5u-PM-gsj"/>
+                                    <constraint firstAttribute="height" constant="75" id="nwH-HB-8Br"/>
+                                    <constraint firstAttribute="width" constant="75" id="t8H-BC-MEo"/>
+                                </constraints>
+                                <state key="normal" image="icons8-resume-button-100"/>
+                                <connections>
+                                    <action selector="playPauseMusicButton:" destination="ETW-Pc-ero" eventType="touchUpInside" id="TBY-Ut-5Nf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SABRE-II" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wpH-zM-wzx">
+                                <rect key="frame" x="20" y="94" width="100" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FIR-bc-6e8" firstAttribute="top" secondItem="RsH-Cq-rqn" secondAttribute="bottom" constant="467" id="1rs-Xo-edM"/>
+                            <constraint firstItem="wpH-zM-wzx" firstAttribute="leading" secondItem="FvJ-Ol-S5t" secondAttribute="leading" constant="20" id="2UZ-qR-KVb"/>
+                            <constraint firstItem="FvJ-Ol-S5t" firstAttribute="bottom" secondItem="Qj0-LT-F36" secondAttribute="bottom" constant="26" id="8nk-96-4pw"/>
+                            <constraint firstItem="FIR-bc-6e8" firstAttribute="leading" secondItem="Qj0-LT-F36" secondAttribute="trailing" constant="204" id="AZp-ep-Ndr"/>
+                            <constraint firstItem="Qj0-LT-F36" firstAttribute="leading" secondItem="FvJ-Ol-S5t" secondAttribute="leading" constant="30" id="B0F-zs-UJ1"/>
+                            <constraint firstItem="Qj0-LT-F36" firstAttribute="centerX" secondItem="X76-PB-6h9" secondAttribute="centerX" constant="-139.5" id="Dry-r0-UDw"/>
+                            <constraint firstItem="RsH-Cq-rqn" firstAttribute="leading" secondItem="FvJ-Ol-S5t" secondAttribute="leading" constant="87" id="QP6-Gq-YxU"/>
+                            <constraint firstItem="wpH-zM-wzx" firstAttribute="top" secondItem="FvJ-Ol-S5t" secondAttribute="top" constant="50" id="RQ1-g8-qhs"/>
+                            <constraint firstItem="RsH-Cq-rqn" firstAttribute="centerX" secondItem="X76-PB-6h9" secondAttribute="centerX" id="XhM-dF-fOp"/>
+                            <constraint firstItem="FIR-bc-6e8" firstAttribute="leading" secondItem="FvJ-Ol-S5t" secondAttribute="leading" constant="309" id="dMt-OT-92a"/>
+                            <constraint firstItem="RsH-Cq-rqn" firstAttribute="top" secondItem="FvJ-Ol-S5t" secondAttribute="top" constant="122" id="icw-ew-4cp"/>
+                            <constraint firstItem="FvJ-Ol-S5t" firstAttribute="bottom" secondItem="FIR-bc-6e8" secondAttribute="bottom" constant="26" id="mgQ-54-xQU"/>
+                            <constraint firstItem="Qj0-LT-F36" firstAttribute="centerY" secondItem="X76-PB-6h9" secondAttribute="centerY" constant="350.5" id="qaB-c6-jTz"/>
+                            <constraint firstItem="FvJ-Ol-S5t" firstAttribute="trailing" secondItem="FIR-bc-6e8" secondAttribute="trailing" constant="30" id="qc3-J4-JOy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FvJ-Ol-S5t"/>
+                    </view>
+                    <connections>
+                        <outlet property="currentSongAlbumArt" destination="RsH-Cq-rqn" id="AHp-xf-phW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="red-AK-wgV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="823" y="144"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icons8-add-filled-100" width="75" height="75"/>
+        <image name="icons8-resume-button-100" width="75" height="75"/>
+    </resources>
+</document>

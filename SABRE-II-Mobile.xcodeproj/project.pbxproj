@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4586255241546548CE31B3D6 /* Pods_SABRE_II_MobileTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 308EE1F44C52C21F3816FEA0 /* Pods_SABRE_II_MobileTests.framework */; };
 		693657CB2221BE2E00DF9561 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693657CA2221BE2E00DF9561 /* AppDelegate.swift */; };
-		693657CD2221BE2E00DF9561 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693657CC2221BE2E00DF9561 /* ViewController.swift */; };
 		693657D02221BE2E00DF9561 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 693657CE2221BE2E00DF9561 /* Main.storyboard */; };
 		693657D22221BE3000DF9561 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 693657D12221BE3000DF9561 /* Assets.xcassets */; };
 		693657D52221BE3000DF9561 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 693657D32221BE3000DF9561 /* LaunchScreen.storyboard */; };
 		693657E02221BE3000DF9561 /* SABRE_II_MobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693657DF2221BE3000DF9561 /* SABRE_II_MobileTests.swift */; };
 		693657EB2221BE3000DF9561 /* SABRE_II_MobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693657EA2221BE3000DF9561 /* SABRE_II_MobileUITests.swift */; };
-		693657FB22220CAC00DF9561 /* JukeBoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693657FA22220CAC00DF9561 /* JukeBoxViewController.swift */; };
+		697CDBDD222213EA0084CFEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697CDBDC222213EA0084CFEC /* ViewController.swift */; };
+		697CDBDF222213ED0084CFEC /* JukeBoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697CDBDE222213EC0084CFEC /* JukeBoxViewController.swift */; };
+		7FABB4C156AF4A38F5FDB271 /* Pods_SABRE_II_MobileUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C3038BCF5468835612576F /* Pods_SABRE_II_MobileUITests.framework */; };
+		BF5E3336E8D3FCDB8CE937D5 /* Pods_SABRE_II_Mobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA6900F2AAA25AFA79BB57E /* Pods_SABRE_II_Mobile.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00C3038BCF5468835612576F /* Pods_SABRE_II_MobileUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SABRE_II_MobileUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0322D361DF2A89A1CB0904B4 /* Pods-SABRE-II-Mobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SABRE-II-Mobile.debug.xcconfig"; path = "Target Support Files/Pods-SABRE-II-Mobile/Pods-SABRE-II-Mobile.debug.xcconfig"; sourceTree = "<group>"; };
+		305025464A850CF0AED93188 /* Pods-SABRE-II-MobileUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SABRE-II-MobileUITests.release.xcconfig"; path = "Target Support Files/Pods-SABRE-II-MobileUITests/Pods-SABRE-II-MobileUITests.release.xcconfig"; sourceTree = "<group>"; };
+		308EE1F44C52C21F3816FEA0 /* Pods_SABRE_II_MobileTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SABRE_II_MobileTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		693657C72221BE2E00DF9561 /* SABRE-II-Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SABRE-II-Mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		693657CA2221BE2E00DF9561 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		693657CC2221BE2E00DF9561 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		693657CF2221BE2E00DF9561 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		693657D12221BE3000DF9561 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		693657D42221BE3000DF9561 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,7 +54,13 @@
 		693657E62221BE3000DF9561 /* SABRE-II-MobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SABRE-II-MobileUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		693657EA2221BE3000DF9561 /* SABRE_II_MobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SABRE_II_MobileUITests.swift; sourceTree = "<group>"; };
 		693657EC2221BE3000DF9561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		693657FA22220CAC00DF9561 /* JukeBoxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JukeBoxViewController.swift; sourceTree = "<group>"; };
+		697CDBDC222213EA0084CFEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		697CDBDE222213EC0084CFEC /* JukeBoxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JukeBoxViewController.swift; sourceTree = "<group>"; };
+		7159BC847BEE916B652020DA /* Pods-SABRE-II-MobileTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SABRE-II-MobileTests.debug.xcconfig"; path = "Target Support Files/Pods-SABRE-II-MobileTests/Pods-SABRE-II-MobileTests.debug.xcconfig"; sourceTree = "<group>"; };
+		915DA680EF2456ED9A715460 /* Pods-SABRE-II-Mobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SABRE-II-Mobile.release.xcconfig"; path = "Target Support Files/Pods-SABRE-II-Mobile/Pods-SABRE-II-Mobile.release.xcconfig"; sourceTree = "<group>"; };
+		B648D6E4C3F81C9286B29FB1 /* Pods-SABRE-II-MobileTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SABRE-II-MobileTests.release.xcconfig"; path = "Target Support Files/Pods-SABRE-II-MobileTests/Pods-SABRE-II-MobileTests.release.xcconfig"; sourceTree = "<group>"; };
+		D8089F98B1360FF5F37E6901 /* Pods-SABRE-II-MobileUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SABRE-II-MobileUITests.debug.xcconfig"; path = "Target Support Files/Pods-SABRE-II-MobileUITests/Pods-SABRE-II-MobileUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DAA6900F2AAA25AFA79BB57E /* Pods_SABRE_II_Mobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SABRE_II_Mobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF5E3336E8D3FCDB8CE937D5 /* Pods_SABRE_II_Mobile.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4586255241546548CE31B3D6 /* Pods_SABRE_II_MobileTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FABB4C156AF4A38F5FDB271 /* Pods_SABRE_II_MobileUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0AF5026CB74EE3433B3704FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAA6900F2AAA25AFA79BB57E /* Pods_SABRE_II_Mobile.framework */,
+				308EE1F44C52C21F3816FEA0 /* Pods_SABRE_II_MobileTests.framework */,
+				00C3038BCF5468835612576F /* Pods_SABRE_II_MobileUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		693657BE2221BE2E00DF9561 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +108,8 @@
 				693657DE2221BE3000DF9561 /* SABRE-II-MobileTests */,
 				693657E92221BE3000DF9561 /* SABRE-II-MobileUITests */,
 				693657C82221BE2E00DF9561 /* Products */,
+				C911A9775BD4CF6DD5FC025C /* Pods */,
+				0AF5026CB74EE3433B3704FA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +126,10 @@
 		693657C92221BE2E00DF9561 /* SABRE-II-Mobile */ = {
 			isa = PBXGroup;
 			children = (
-				693657CA2221BE2E00DF9561 /* AppDelegate.swift */,
-				693657CC2221BE2E00DF9561 /* ViewController.swift */,
-				693657CE2221BE2E00DF9561 /* Main.storyboard */,
-				693657D12221BE3000DF9561 /* Assets.xcassets */,
-				693657D32221BE3000DF9561 /* LaunchScreen.storyboard */,
-				693657D62221BE3000DF9561 /* Info.plist */,
-				693657FA22220CAC00DF9561 /* JukeBoxViewController.swift */,
+				697CDBE4222215170084CFEC /* SupportingFiles */,
+				697CDBE32222150D0084CFEC /* Models */,
+				697CDBE2222215010084CFEC /* Views */,
+				697CDBE1222214540084CFEC /* Controllers */,
 			);
 			path = "SABRE-II-Mobile";
 			sourceTree = "<group>";
@@ -128,6 +152,55 @@
 			path = "SABRE-II-MobileUITests";
 			sourceTree = "<group>";
 		};
+		697CDBE1222214540084CFEC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				697CDBDC222213EA0084CFEC /* ViewController.swift */,
+				697CDBDE222213EC0084CFEC /* JukeBoxViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		697CDBE2222215010084CFEC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		697CDBE32222150D0084CFEC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		697CDBE4222215170084CFEC /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				693657CA2221BE2E00DF9561 /* AppDelegate.swift */,
+				693657CE2221BE2E00DF9561 /* Main.storyboard */,
+				693657D12221BE3000DF9561 /* Assets.xcassets */,
+				693657D32221BE3000DF9561 /* LaunchScreen.storyboard */,
+				693657D62221BE3000DF9561 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		C911A9775BD4CF6DD5FC025C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0322D361DF2A89A1CB0904B4 /* Pods-SABRE-II-Mobile.debug.xcconfig */,
+				915DA680EF2456ED9A715460 /* Pods-SABRE-II-Mobile.release.xcconfig */,
+				7159BC847BEE916B652020DA /* Pods-SABRE-II-MobileTests.debug.xcconfig */,
+				B648D6E4C3F81C9286B29FB1 /* Pods-SABRE-II-MobileTests.release.xcconfig */,
+				D8089F98B1360FF5F37E6901 /* Pods-SABRE-II-MobileUITests.debug.xcconfig */,
+				305025464A850CF0AED93188 /* Pods-SABRE-II-MobileUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +208,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 693657EF2221BE3000DF9561 /* Build configuration list for PBXNativeTarget "SABRE-II-Mobile" */;
 			buildPhases = (
+				4EBEA73FB217FB164BBA7316 /* [CP] Check Pods Manifest.lock */,
 				693657C32221BE2E00DF9561 /* Sources */,
 				693657C42221BE2E00DF9561 /* Frameworks */,
 				693657C52221BE2E00DF9561 /* Resources */,
+				ABFE56B4C3C458B1B4EBC066 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +227,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 693657F22221BE3000DF9561 /* Build configuration list for PBXNativeTarget "SABRE-II-MobileTests" */;
 			buildPhases = (
+				32A41964C2ABCA29EB2847F5 /* [CP] Check Pods Manifest.lock */,
 				693657D72221BE3000DF9561 /* Sources */,
 				693657D82221BE3000DF9561 /* Frameworks */,
 				693657D92221BE3000DF9561 /* Resources */,
@@ -170,6 +246,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 693657F52221BE3000DF9561 /* Build configuration list for PBXNativeTarget "SABRE-II-MobileUITests" */;
 			buildPhases = (
+				0659591B0E887933F5F88C4F /* [CP] Check Pods Manifest.lock */,
 				693657E22221BE3000DF9561 /* Sources */,
 				693657E32221BE3000DF9561 /* Frameworks */,
 				693657E42221BE3000DF9561 /* Resources */,
@@ -259,14 +336,107 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0659591B0E887933F5F88C4F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SABRE-II-MobileUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		32A41964C2ABCA29EB2847F5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SABRE-II-MobileTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4EBEA73FB217FB164BBA7316 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SABRE-II-Mobile-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABFE56B4C3C458B1B4EBC066 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SABRE-II-Mobile/Pods-SABRE-II-Mobile-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SABRE-II-Mobile/Pods-SABRE-II-Mobile-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		693657C32221BE2E00DF9561 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				693657CD2221BE2E00DF9561 /* ViewController.swift in Sources */,
-				693657FB22220CAC00DF9561 /* JukeBoxViewController.swift in Sources */,
+				697CDBDD222213EA0084CFEC /* ViewController.swift in Sources */,
 				693657CB2221BE2E00DF9561 /* AppDelegate.swift in Sources */,
+				697CDBDF222213ED0084CFEC /* JukeBoxViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,11 +609,12 @@
 		};
 		693657F02221BE3000DF9561 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0322D361DF2A89A1CB0904B4 /* Pods-SABRE-II-Mobile.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C26WBP36T2;
-				INFOPLIST_FILE = "SABRE-II-Mobile/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/SABRE-II-Mobile/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,11 +628,12 @@
 		};
 		693657F12221BE3000DF9561 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 915DA680EF2456ED9A715460 /* Pods-SABRE-II-Mobile.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C26WBP36T2;
-				INFOPLIST_FILE = "SABRE-II-Mobile/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/SABRE-II-Mobile/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -475,6 +647,7 @@
 		};
 		693657F32221BE3000DF9561 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7159BC847BEE916B652020DA /* Pods-SABRE-II-MobileTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -496,6 +669,7 @@
 		};
 		693657F42221BE3000DF9561 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B648D6E4C3F81C9286B29FB1 /* Pods-SABRE-II-MobileTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -517,6 +691,7 @@
 		};
 		693657F62221BE3000DF9561 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8089F98B1360FF5F37E6901 /* Pods-SABRE-II-MobileUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -537,6 +712,7 @@
 		};
 		693657F72221BE3000DF9561 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 305025464A850CF0AED93188 /* Pods-SABRE-II-MobileUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
