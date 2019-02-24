@@ -14,8 +14,10 @@
 		693657D52221BE3000DF9561 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 693657D32221BE3000DF9561 /* LaunchScreen.storyboard */; };
 		693657E02221BE3000DF9561 /* SABRE_II_MobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693657DF2221BE3000DF9561 /* SABRE_II_MobileTests.swift */; };
 		693657EB2221BE3000DF9561 /* SABRE_II_MobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693657EA2221BE3000DF9561 /* SABRE_II_MobileUITests.swift */; };
+		695F45DF22225B6400B01820 /* JukeBoxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695F45DE22225B6400B01820 /* JukeBoxTableViewCell.swift */; };
 		697CDBDD222213EA0084CFEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697CDBDC222213EA0084CFEC /* ViewController.swift */; };
 		697CDBDF222213ED0084CFEC /* JukeBoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697CDBDE222213EC0084CFEC /* JukeBoxViewController.swift */; };
+		69E226402222B443000F6ECF /* AddSongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E2263F2222B443000F6ECF /* AddSongViewController.swift */; };
 		7FABB4C156AF4A38F5FDB271 /* Pods_SABRE_II_MobileUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C3038BCF5468835612576F /* Pods_SABRE_II_MobileUITests.framework */; };
 		BF5E3336E8D3FCDB8CE937D5 /* Pods_SABRE_II_Mobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA6900F2AAA25AFA79BB57E /* Pods_SABRE_II_Mobile.framework */; };
 /* End PBXBuildFile section */
@@ -54,8 +56,10 @@
 		693657E62221BE3000DF9561 /* SABRE-II-MobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SABRE-II-MobileUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		693657EA2221BE3000DF9561 /* SABRE_II_MobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SABRE_II_MobileUITests.swift; sourceTree = "<group>"; };
 		693657EC2221BE3000DF9561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		695F45DE22225B6400B01820 /* JukeBoxTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JukeBoxTableViewCell.swift; sourceTree = "<group>"; };
 		697CDBDC222213EA0084CFEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		697CDBDE222213EC0084CFEC /* JukeBoxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JukeBoxViewController.swift; sourceTree = "<group>"; };
+		69E2263F2222B443000F6ECF /* AddSongViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSongViewController.swift; sourceTree = "<group>"; };
 		7159BC847BEE916B652020DA /* Pods-SABRE-II-MobileTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SABRE-II-MobileTests.debug.xcconfig"; path = "Target Support Files/Pods-SABRE-II-MobileTests/Pods-SABRE-II-MobileTests.debug.xcconfig"; sourceTree = "<group>"; };
 		915DA680EF2456ED9A715460 /* Pods-SABRE-II-Mobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SABRE-II-Mobile.release.xcconfig"; path = "Target Support Files/Pods-SABRE-II-Mobile/Pods-SABRE-II-Mobile.release.xcconfig"; sourceTree = "<group>"; };
 		B648D6E4C3F81C9286B29FB1 /* Pods-SABRE-II-MobileTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SABRE-II-MobileTests.release.xcconfig"; path = "Target Support Files/Pods-SABRE-II-MobileTests/Pods-SABRE-II-MobileTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -155,6 +159,7 @@
 		697CDBE1222214540084CFEC /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				69E2263F2222B443000F6ECF /* AddSongViewController.swift */,
 				697CDBDC222213EA0084CFEC /* ViewController.swift */,
 				697CDBDE222213EC0084CFEC /* JukeBoxViewController.swift */,
 			);
@@ -164,6 +169,7 @@
 		697CDBE2222215010084CFEC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				695F45DE22225B6400B01820 /* JukeBoxTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -197,7 +203,6 @@
 				D8089F98B1360FF5F37E6901 /* Pods-SABRE-II-MobileUITests.debug.xcconfig */,
 				305025464A850CF0AED93188 /* Pods-SABRE-II-MobileUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -412,15 +417,19 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SABRE-II-Mobile/Pods-SABRE-II-Mobile-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
-				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/DynamicBlurView/DynamicBlurView.framework",
+				"${BUILT_PRODUCTS_DIR}/PopupDialog/PopupDialog.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DynamicBlurView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PopupDialog.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -434,6 +443,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				695F45DF22225B6400B01820 /* JukeBoxTableViewCell.swift in Sources */,
+				69E226402222B443000F6ECF /* AddSongViewController.swift in Sources */,
 				697CDBDD222213EA0084CFEC /* ViewController.swift in Sources */,
 				693657CB2221BE2E00DF9561 /* AppDelegate.swift in Sources */,
 				697CDBDF222213ED0084CFEC /* JukeBoxViewController.swift in Sources */,

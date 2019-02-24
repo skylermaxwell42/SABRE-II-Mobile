@@ -18,12 +18,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-    // Handle the text field’s user input through delegate callbacks.
-    jukeBoxCreateTextField.delegate = self
+    // Handle the text field’s user input through delegate callbacks. self
   }
 
   @IBAction func jukeBoxCreateButton(_ sender: UIButton) {
+    performSegue(withIdentifier: "createRoomSegueue", sender: sender)
     return;
   }
   
@@ -34,17 +33,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
   }
   
   func textFieldDidEndEditing(_ textField: UITextField) {
-    jukeBoxUILabel.text!.append(jukeBoxCreateTextField.text!)
-    jukeBoxCreateTextField.text = ""
-    jukeBoxCreateTextField.placeholder = "Enter song name"
-    jukeBoxCreateButton.setTitle("Add Song", for: UIControl.State.normal)
-    
-    connectToServer()
-    performSegue(withIdentifier: "createRoomSegueue", sender: textField)
-  }
-  
-  func connectToServer() {
-    print("Connecting to sevrer")
+    jukeBoxCreateButton.sendActions(for: .touchUpInside)
   }
   
 }

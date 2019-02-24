@@ -6,9 +6,10 @@ target 'SABRE-II-Mobile' do
   use_frameworks!
 
   # Pods for SABRE-II-Mobile
-  pod 'ObjectMapper', '~> 3.4'
-  pod 'AFNetworking', '~> 3.0'
-
+  pod 'Alamofire'
+  pod 'SwiftyJSON'
+  pod 'PopupDialog', '~> 0.9'
+  
   target 'SABRE-II-MobileTests' do
     inherit! :search_paths
     # Pods for testing
