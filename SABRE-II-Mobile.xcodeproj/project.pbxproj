@@ -19,10 +19,10 @@
 		697CDBDF222213ED0084CFEC /* JukeBoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697CDBDE222213EC0084CFEC /* JukeBoxViewController.swift */; };
 		69E226402222B443000F6ECF /* AddSongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E2263F2222B443000F6ECF /* AddSongViewController.swift */; };
 		69E2265E2225765A000F6ECF /* JukeBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E2265D2225765A000F6ECF /* JukeBox.swift */; };
-		69E2266022257678000F6ECF /* JukeBoxMusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E2265F22257678000F6ECF /* JukeBoxMusicPlayer.swift */; };
 		69E22662222576A7000F6ECF /* AppleMusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E22661222576A7000F6ECF /* AppleMusicPlayer.swift */; };
 		69E22664222576C3000F6ECF /* SpotifyMusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E22663222576C3000F6ECF /* SpotifyMusicPlayer.swift */; };
 		69E22666222576D1000F6ECF /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E22665222576D1000F6ECF /* Settings.swift */; };
+		69E2266A22258159000F6ECF /* JukeBoxMusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E2266922258159000F6ECF /* JukeBoxMusicPlayer.swift */; };
 		7FABB4C156AF4A38F5FDB271 /* Pods_SABRE_II_MobileUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C3038BCF5468835612576F /* Pods_SABRE_II_MobileUITests.framework */; };
 		BF5E3336E8D3FCDB8CE937D5 /* Pods_SABRE_II_Mobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA6900F2AAA25AFA79BB57E /* Pods_SABRE_II_Mobile.framework */; };
 /* End PBXBuildFile section */
@@ -66,10 +66,10 @@
 		697CDBDE222213EC0084CFEC /* JukeBoxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JukeBoxViewController.swift; sourceTree = "<group>"; };
 		69E2263F2222B443000F6ECF /* AddSongViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSongViewController.swift; sourceTree = "<group>"; };
 		69E2265D2225765A000F6ECF /* JukeBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JukeBox.swift; sourceTree = "<group>"; };
-		69E2265F22257678000F6ECF /* JukeBoxMusicPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = JukeBoxMusicPlayer.swift; path = "/Users/maxwels2/Documents/Spring2019/CSC345/SABRE-II-Mobile/SABRE-II-Mobile/Models/JukeBoxMusicPlayer.swift"; sourceTree = "<absolute>"; };
 		69E22661222576A7000F6ECF /* AppleMusicPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicPlayer.swift; sourceTree = "<group>"; };
 		69E22663222576C3000F6ECF /* SpotifyMusicPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyMusicPlayer.swift; sourceTree = "<group>"; };
 		69E22665222576D1000F6ECF /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		69E2266922258159000F6ECF /* JukeBoxMusicPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JukeBoxMusicPlayer.swift; sourceTree = "<group>"; };
 		7159BC847BEE916B652020DA /* Pods-SABRE-II-MobileTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SABRE-II-MobileTests.debug.xcconfig"; path = "Target Support Files/Pods-SABRE-II-MobileTests/Pods-SABRE-II-MobileTests.debug.xcconfig"; sourceTree = "<group>"; };
 		915DA680EF2456ED9A715460 /* Pods-SABRE-II-Mobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SABRE-II-Mobile.release.xcconfig"; path = "Target Support Files/Pods-SABRE-II-Mobile/Pods-SABRE-II-Mobile.release.xcconfig"; sourceTree = "<group>"; };
 		B648D6E4C3F81C9286B29FB1 /* Pods-SABRE-II-MobileTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SABRE-II-MobileTests.release.xcconfig"; path = "Target Support Files/Pods-SABRE-II-MobileTests/Pods-SABRE-II-MobileTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -187,11 +187,11 @@
 		697CDBE32222150D0084CFEC /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				69E2265F22257678000F6ECF /* JukeBoxMusicPlayer.swift */,
 				69E2265D2225765A000F6ECF /* JukeBox.swift */,
 				69E22661222576A7000F6ECF /* AppleMusicPlayer.swift */,
 				69E22663222576C3000F6ECF /* SpotifyMusicPlayer.swift */,
 				69E22665222576D1000F6ECF /* Settings.swift */,
+				69E2266922258159000F6ECF /* JukeBoxMusicPlayer.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -458,12 +458,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69E2266022257678000F6ECF /* JukeBoxMusicPlayer.swift in Sources */,
 				69E22662222576A7000F6ECF /* AppleMusicPlayer.swift in Sources */,
 				695F45DF22225B6400B01820 /* JukeBoxTableViewCell.swift in Sources */,
 				69E226402222B443000F6ECF /* AddSongViewController.swift in Sources */,
 				69E22666222576D1000F6ECF /* Settings.swift in Sources */,
 				69E2265E2225765A000F6ECF /* JukeBox.swift in Sources */,
+				69E2266A22258159000F6ECF /* JukeBoxMusicPlayer.swift in Sources */,
 				697CDBDD222213EA0084CFEC /* ViewController.swift in Sources */,
 				693657CB2221BE2E00DF9561 /* AppDelegate.swift in Sources */,
 				697CDBDF222213ED0084CFEC /* JukeBoxViewController.swift in Sources */,
