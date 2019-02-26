@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/maxwels2/Documents/Spring2019/CSC345/SABRE-II-Mobile/SABRE-II-Mobile/Models/JukeBoxMusicPlayer.swift">
+   </FileRef>
+   <FileRef
       location = "group:SABRE-II-Mobile.xcodeproj">
    </FileRef>
    <FileRef
