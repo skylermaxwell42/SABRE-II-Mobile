@@ -1,14 +1,14 @@
 //
-//  AddSongViewController.swift
+//  SettingsViewController.swift
 //  SABRE-II-Mobile
 //
-//  Created by Skyler Maxwell on 2/24/19.
+//  Created by Skyler Maxwell on 2/26/19.
 //  Copyright © 2019 SABRE. All rights reserved.
 //
 
 import UIKit
 
-class AddSongViewController: UIViewController {
+class SettingsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
