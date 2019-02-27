@@ -83,6 +83,62 @@
             </objects>
             <point key="canvasLocation" x="-78.260869565217391" y="143.97321428571428"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="p4x-bN-W3O">
+            <objects>
+                <viewController id="Kdd-0o-WMk" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ini-aT-4Wj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lqa-Oe-0Fb">
+                                <rect key="frame" x="362" y="44" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="awr-vn-NfL"/>
+                                </constraints>
+                                <state key="normal" image="settings-128"/>
+                            </button>
+                            <tabBar contentMode="redraw" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="L9C-bu-Za2">
+                                <rect key="frame" x="0.0" y="806" width="414" height="83"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem title="Juke Box" image="jukebox-2" selectedImage="jukebox-2" id="dzW-qv-Wy1">
+                                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="7"/>
+                                    </tabBarItem>
+                                    <tabBarItem title="" systemItem="search" id="QnY-tJ-Q1N">
+                                        <inset key="largeContentSizeImageInsets" minX="0.0" minY="5" maxX="0.0" maxY="0.0"/>
+                                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="7"/>
+                                    </tabBarItem>
+                                </items>
+                            </tabBar>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lqa-Oe-0Fb" firstAttribute="leading" secondItem="guY-7o-GSR" secondAttribute="leading" constant="362" id="7OK-LZ-MeI"/>
+                            <constraint firstItem="lqa-Oe-0Fb" firstAttribute="trailing" secondItem="ini-aT-4Wj" secondAttribute="trailingMargin" id="L2U-q1-G1X"/>
+                            <constraint firstAttribute="trailing" secondItem="L9C-bu-Za2" secondAttribute="trailing" id="T2C-t0-e27"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="L9C-bu-Za2" secondAttribute="bottom" constant="-27" id="e6V-TU-JF5"/>
+                            <constraint firstItem="lqa-Oe-0Fb" firstAttribute="top" secondItem="guY-7o-GSR" secondAttribute="top" id="ib5-aY-T2Q"/>
+                            <constraint firstItem="L9C-bu-Za2" firstAttribute="leading" secondItem="ini-aT-4Wj" secondAttribute="leading" id="rmQ-OR-S1w"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="guY-7o-GSR"/>
+                    </view>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="kKg-nN-WJd" id="eSt-Rb-rC7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sf2-FX-HaE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="kKg-nN-WJd">
+                    <connections>
+                        <outlet property="delegate" destination="Kdd-0o-WMk" id="fFn-27-c3O"/>
+                        <outlet property="searchContentsController" destination="Kdd-0o-WMk" id="TNX-vG-WaD"/>
+                        <outlet property="searchResultsDataSource" destination="Kdd-0o-WMk" id="b1w-eq-CXr"/>
+                        <outlet property="searchResultsDelegate" destination="Kdd-0o-WMk" id="aY5-NC-g17"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="-78" y="893"/>
+        </scene>
         <!--Juke Box View Controller-->
         <scene sceneID="NTt-mn-hfs">
             <objects>
@@ -280,6 +336,8 @@
         <image name="icons8-plus-math-filled-50" width="37.5" height="37.5"/>
         <image name="icons8-resume-button-100" width="75" height="75"/>
         <image name="icons8-subtract-filled-50" width="37.5" height="37.5"/>
+        <image name="jukebox-2" width="37.5" height="37.5"/>
         <image name="music-50-512" width="512" height="512"/>
+        <image name="settings-128" width="96" height="96"/>
     </resources>
 </document>
