@@ -25,10 +25,13 @@ class JukeBoxViewController: UIViewController, UITableViewDelegate, UITableViewD
   
   let systemMusicPlayer = MPMusicPlayerController.systemMusicPlayer
   @IBOutlet weak var currentSongAlbumArt: UIImageView!
-  @IBOutlet weak var addSongToJukeBoxButton: UIButton!
   @IBOutlet weak var playPauseMusicButton: UIButton!
   @IBOutlet weak var jukeBoxTableView: UITableView!
-  @IBOutlet weak var jukeBoxAlbumArt: UIImageView!
+  @IBOutlet weak var searchTabBarItem: UITabBarItem!
+  
+  override var preferredStatusBarStyle: UIStatusBarStyle {
+    return .lightContent
+  }
   
   var mediaTimer = Timer()
   
@@ -138,7 +141,7 @@ class JukeBoxViewController: UIViewController, UITableViewDelegate, UITableViewD
           print(response?.suggestedFilename ?? url.lastPathComponent)
           print("Download Finished")
           DispatchQueue.main.async() {
-            self.jukeBoxAlbumArt.image = UIImage(data: data)
+            self.currentSongAlbumArt.image = UIImage(data: data)
           }
         }
       }

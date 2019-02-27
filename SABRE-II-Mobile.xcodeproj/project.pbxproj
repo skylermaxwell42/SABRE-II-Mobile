@@ -21,7 +21,6 @@
 		69E22662222576A7000F6ECF /* AppleMusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E22661222576A7000F6ECF /* AppleMusicPlayer.swift */; };
 		69E22664222576C3000F6ECF /* SpotifyMusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E22663222576C3000F6ECF /* SpotifyMusicPlayer.swift */; };
 		69E22666222576D1000F6ECF /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E22665222576D1000F6ECF /* Settings.swift */; };
-		69E2266A22258159000F6ECF /* JukeBoxMusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E2266922258159000F6ECF /* JukeBoxMusicPlayer.swift */; };
 		69E6CC8122260E0700ACA98E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E6CC8022260E0700ACA98E /* SettingsViewController.swift */; };
 		69E6CC8322260FAC00ACA98E /* SearchPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E6CC8222260FAC00ACA98E /* SearchPopUpViewController.swift */; };
 		69E6CC852226119F00ACA98E /* JukeBoxTrackListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E6CC842226119F00ACA98E /* JukeBoxTrackListView.swift */; };
@@ -72,7 +71,6 @@
 		69E22661222576A7000F6ECF /* AppleMusicPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicPlayer.swift; sourceTree = "<group>"; };
 		69E22663222576C3000F6ECF /* SpotifyMusicPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyMusicPlayer.swift; sourceTree = "<group>"; };
 		69E22665222576D1000F6ECF /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
-		69E2266922258159000F6ECF /* JukeBoxMusicPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JukeBoxMusicPlayer.swift; sourceTree = "<group>"; };
 		69E6CC8022260E0700ACA98E /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		69E6CC8222260FAC00ACA98E /* SearchPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPopUpViewController.swift; sourceTree = "<group>"; };
 		69E6CC842226119F00ACA98E /* JukeBoxTrackListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JukeBoxTrackListView.swift; sourceTree = "<group>"; };
@@ -203,7 +201,6 @@
 				69E22661222576A7000F6ECF /* AppleMusicPlayer.swift */,
 				69E22663222576C3000F6ECF /* SpotifyMusicPlayer.swift */,
 				69E22665222576D1000F6ECF /* Settings.swift */,
-				69E2266922258159000F6ECF /* JukeBoxMusicPlayer.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -477,7 +474,6 @@
 				69E22666222576D1000F6ECF /* Settings.swift in Sources */,
 				69E6CC8122260E0700ACA98E /* SettingsViewController.swift in Sources */,
 				69E2265E2225765A000F6ECF /* JukeBox.swift in Sources */,
-				69E2266A22258159000F6ECF /* JukeBoxMusicPlayer.swift in Sources */,
 				697CDBDD222213EA0084CFEC /* ViewController.swift in Sources */,
 				69E6CC89222611E000ACA98E /* SearchResultsView.swift in Sources */,
 				693657CB2221BE2E00DF9561 /* AppDelegate.swift in Sources */,
